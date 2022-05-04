@@ -1,0 +1,321 @@
+.wrapperRps{
+    background-color:#9C835F;
+    height: 99vh;
+}
+ 
+.headerRps{
+    padding: 1rem 2rem;
+    height: 10vh;
+}
+
+/* resize backbutton */
+.backbuttonImage{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.backbutton{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+/* resize logo */
+.logoRps img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.8rem;
+
+}
+
+.logoRpsImg{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.8rem;
+
+}
+.logoRps{
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.titleRps{
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 3.6rem;
+    font-weight: 700;
+    align-items: center;
+    color:#F9B23D;
+
+}
+
+.playerCom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 3rem;
+}
+.playerCom p{
+    align-items: center;
+}
+
+/* resize image in div choice */
+
+.choiceImage{
+    width: 12rem;
+    height: 12rem;
+
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60vh;
+    align-items: center;
+}
+
+/* add padding on class choice */
+.choice{
+    padding: 3rem 3rem;
+}
+
+/* style to marker choice */
+.choiceMarker{
+    background-color: #C4C4C4;
+    border-radius: 3rem;
+}
+
+.resultMiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:65rem;
+    width: 30rem;
+    align-items: center; 
+}
+
+/* inital style result */
+.resultRps{
+    display: flex;
+    letter-spacing: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: #BD0000;
+    font-size: 14.5rem;
+}
+
+/* style to override .result-rps class, if player already click choice */
+.resultRpsChange{
+    display: flex;
+    background-color: #4C9654;
+    letter-spacing: 1rem;
+    line-height: 5rem;
+    height: 15rem;
+    width: 30rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: white;
+    font-size: 3.8rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform:rotate(-25deg);
+    border-radius: 47%;
+}
+
+/* resize refresh image */
+.refreshRps img{
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+.refreshRpsImg{
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+
+/* disable style, to make unclickable */
+.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.gameStatus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startBtn{
+    font-size: 2.7rem;
+    padding: 0.5rem 2rem;
+    border :1px;
+    border-radius: 3rem;
+    background-color: teal;
+    color: wheat;
+}
+
+/* responsive RPS page */
+@media (min-width: 768px){
+    .wrapperRps{
+        height: 120vh;
+    }
+    .choices{
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 767px){
+
+    .contentRps::before{
+        display: flex;
+        content:"Player";
+        font-family: var(--font-primary);
+        font-size: 3.6rem;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .contentRps::after{
+        display: flex;
+        content:"COM";
+        font-family: var(--font-primary);
+        font-size: 3.6rem;
+        font-weight: 700;
+        justify-content: center;
+    }
+
+    .contentRps{
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .playerCom{
+        display: none;
+    }
+    .choices{
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .choiceLeft{
+        display: inherit;
+    }
+    .choiceRight{
+        display: inherit;
+    }
+
+    .wrapperRps{
+        height: 120vh;
+    }
+    .playerCom{
+        margin-top: 6rem;
+        font-size: 2.5rem;
+    }
+    .choice img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .choiceImage{
+        width: 7rem;
+        height: 7rem;
+    }
+    .refreshRps img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .resultRps{
+        font-size: 4rem;
+    }
+    .resultRpsChange{
+        font-size: 2rem;
+        line-height: 3rem;
+        height: 8rem;
+        width: 17rem;
+    }
+    .resultMiddle{
+        margin-bottom: 4rem;
+    }
+    .choice{
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .contentRps::before{
+        display: flex;
+        content:"Player";
+        font-family: var(--font-primary);
+        font-size: 3.6rem;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .contentRps::after{
+        display: flex;
+        content:"COM";
+        font-family: var(--font-primary);
+        font-size: 3.6rem;
+        font-weight: 700;
+        justify-content: center;
+    }
+
+    .contentRps{
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .wrapperRps{
+        height: 120vh;
+    }
+    .playerCom{
+        display: none;
+    }
+    .choices{
+        flex-direction: column-reverse;
+    }
+    .choiceLeft{
+        display: inherit;
+    }
+    .choiceRight{
+        display: inherit;
+    }
+    .playerCom{
+        margin-top: 4rem;
+        font-size: 2.5rem;
+    }
+    .choice img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .refreshRps img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .resultRps{
+        font-size: 5rem;
+    }
+    .resultRpsChange{
+        font-size: 2rem;
+        line-height: 3rem;
+        height: 8rem;
+        width: 17rem;
+    }
+    .resultMiddle{
+        height: 20rem;
+    }
+    .choice{
+        padding: 1.5rem 1.5rem;
+    }
+}
